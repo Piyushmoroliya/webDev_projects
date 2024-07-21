@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>form making</title>
+    <style>
+        /* body-css */
+        body {
+            width: 21cm;
+            height: 29.7cm;
+            margin-left: 25%;
+            padding: 10px;
+        }
+       /* div-css */
+        div {
+            border: solid black;
+            height: 190vh;
+            width: 50vw;
+        }
+          /* heading-css */
+        .heading {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            color: red;
+        }
+          /* label-css */
+        .label-style {
+            font-size: 35px;
+            font-family: "Teko", sans-serif;
+        }
+           /* fieldset-style */
+        .fieldset-style {
+            font-size: 30px;
+            font-family: "Playwrite ES", Georgia, 'Times New Roman', Times, serif;
+            color: brown;
+            text-align: center;
+        }
+          /* input-css */
+        .input-field {
+            width: 300px;
+            height: 40px;
+            background-color: lightblue;
+        }
+          /* tabel-css */
+        tr,
+        th,
+        td {
+            border: solid black;
+            text-align: center;
+        }
+           /* box-css */
+        table {
+            height: 10vh;
+            width: 10vw;
+        }
+        
+        /* submit-CSS */
+        .submitBtn {
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to left,rgb(230, 35, 0),rgb(255, 174, 0));
+  letter-spacing: 0.7px;
+}
+
+.submitBtn:hover .arrow {
+  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.submitBtn:active {
+  transform: scale(0.97);
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body style="text-align: center;">
+    <form>
+        <div style="background-color: lightseagreen;">
+            <!-- personal detels -->
+            <br>
+            <h1 class="heading">Students Registration Form</h1>
+            <hr>
+            <hr>
+            <br>
+
+            <label class="label-style">First Name:-</label>
+            <input class="input-field" type="text">
+            <br>
+            <br>
+            <label class="label-style">Middle Name:-</label>
+            <input class="input-field" type="text">
+            <br>
+            <br>
+            <label class="label-style">Last Name:-</label>
+            <input class="input-field" type="text">
+            <br>
+            <br>
+            <label class="label-style">Date:-</label>
+            <input class="input-field" type="date">
+            <br>
+            <br>
+            <label class="label-style">Gender:- </label>
+            <label class="label-style">Male</label>
+            <input type="radio">
+            <label class="label-style">Female</label>
+            <input type="radio">
+            <br>
+            <br>
+            <!-- email and passwardf  -->
+            <label class="label-style">Email:-</label>
+            <input type="email" class="input-field">
+            <br>
+            <br>
+            <label class="label-style">Passward:-</label>
+            <input type="password" class="input-field">
+            <br>
+            <br>
+            <!--adress and contact  -->
+            <label class="label-style">Adress:-</label>
+            <textarea class="input-field" placeholder="Adress"></textarea>
+            <br>
+            <br>
+            <!-- city,it's pincode -->
+            <label class="label-style">City:-</label>
+            <input type="text" class="input-field">
+            <br>
+            <br>
+            <label class="label-style">Pin code:-</label>
+            <input type="number" class="input-field">
+            <br>
+            <br>
+            <!-- sate and countary -->
+            <label class="label-style">sate:-</label>
+            <input type="text" class="input-field">
+            <br>
+            <br>
+            <label class="label-style">countary:-</label>
+            <input type="number" class="input-field">
+            <br>
+            <br>
+            <!-- your Intrest -->
+            <label class="label-style">Hobbies:-</label>
+
+            <label class="label-style">Drawing</label>
+            <input type="radio">
+            <label class="label-style">Singing</label>
+            <input type="radio">
+            <label class="label-style">Sketching</label>
+            <input type="radio">
+            <br>
+            <br>
+            <label class="label-style">others Hobbies:-</label>
+            <textarea class="input-field" placeholder="others"></textarea>
+            <br>
+            <br>
+            <!-- qualifications -->
+            <label class="label-style">Your qualification:-</label>
+            <br>
+            <table>
+                <tr>
+                    <th>SI.NO.</th>
+                    <th>Examination</th>
+                    <th>Borad</th>
+                    <th>Percetage</th>
+                    <th>Year of passing</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class 10th</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class 12th</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+            <br>
+            <!-- courses applide for -->
+            <label class="label-style">course applide for:-</label>
+            <select name="Courses" class="input-field">
+                <option>BCA</option>
+                <option>B.com</option>
+                <option>B.sc</option>
+                <option>B.A</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <!-- submit -->
+            <button style="margin-left: 40%;" class="submitBtn">
+                Submit
+                <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+              </button>
+              <!--submit and completed  -->
+              <hr>
+              <hr>
+              
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </form>
+
+</body>
+
+</html>

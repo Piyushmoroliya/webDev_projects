@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Home page</title>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        .main-box {
+            width: 100vw;
+            height: 450vh;
+            background-color: #000000;
+            border: 1px solid black;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .first-box {
+            width: 100vw;
+            height: 10vh;
+            border: 3px solid aqua;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            color: white;
+            font-size: larger;
+            gap: 40px;
+            text-align: center;
+            box-shadow: rgba(224, 15, 15, 0.25) 0px 54px 55px, rgba(225, 57, 57, 0.12) 0px -12px 30px, rgba(234, 0, 0, 0.12) 0px 4px 6px, rgba(229, 15, 15, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            background-color: rgb(7, 77, 99);
+
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+
+        }
+
+        .first-box :hover {
+            color: aqua;
+
+        }
+
+        .third-box {
+            width: 0vw;
+            height: 50vh;
+            display: flex;
+            margin-left: 10%;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+
+        }
+
+        .third-box-one {
+            width: 24vw;
+            height: 10vh;
+
+            margin: 0;
+            color: aqua;
+            font-family: "Bona Nova SC", serif;
+            margin-top: 44px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+
+
+        }
+
+        .third-box-two {
+            height: 25vh;
+            width: 120vh;
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+            margin-left: 150%;
+            margin-top: -80%;
+            text-align: center;
+            margin-right: -35%;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .section-About-box {
+            width: 100vw;
+            height: 50vh;
+            margin: 0;
+            flex-direction: column;
+            display: flex;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .about-box {
+            width: 40vw;
+            height: 50vh;
+            margin-left: -30%;
+            margin-top: 70%;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+
+
+        }
+
+        .about-img-box {
+            width: 40vw;
+            height: 70vh;
+            border: 5px solid aliceblue;
+            margin-left: 130%;
+            margin-top: -60%;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .caption-box {
+            width: 50vw;
+            height: 20vh;
+            margin-top: -20%;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .skills-box {
+            width: 70vw;
+            height: 60vh;
+            margin-top: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 1vw;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .html-box {
+            width: 35vw;
+            height: 30vh;
+            border: 5px solid white;
+            padding: 5%;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .css-box {
+            width: 35vw;
+            height: 30vh;
+            border: 5px solid white;
+            padding: 5%;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .projects-section {
+            width: 80vw;
+            height: 40vh;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .project-box-one {
+            width: 20vw;
+            height: 25vh;
+            border: 5px solid aqua;
+            gap: 15px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .project-box-two {
+            width: 20vw;
+            height: 25vh;
+            border: 5px solid aqua;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+
+        }
+
+        .project-box-three {
+            width: 20vw;
+            height: 25vh;
+            border: 5px solid aqua;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .project-box-four {
+            width: 20vw;
+            height: 25vh;
+            border: 5px solid aqua;
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        /* button */
+        button {
+            padding: 0.8em 1.8em;
+            border: 2px solid #17C3B2;
+            position: relative;
+            overflow: hidden;
+            background-color: transparent;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: .3s;
+            z-index: 1;
+            font-family: inherit;
+            color: #17C3B2;
+        }
+
+        button::before {
+            content: '';
+            width: 0;
+            height: 300%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background: #17C3B2;
+            transition: .5s ease;
+            display: block;
+            z-index: -1;
+        }
+
+        button:hover::before {
+            width: 105%;
+        }
+
+        button:hover {
+            color: #111;
+        }
+
+        .contact-box {
+            width: 80vw;
+            height: 100vh;
+            margin: 0%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .contact-box-one {
+            width: 35vw;
+            height: 45vh;
+            margin: 0%;
+            border: 1px solid aqua;
+
+        }
+
+        .contact-box-two {
+            width: 35vw;
+            height: 45vh;
+            margin: 0%;
+            border: 1px solid aqua;
+        }
+
+        .placeholder {
+            height: 10%;
+            border-radius: 10px;
+        }
+
+        .p {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .logo-sec {
+            margin-left: 300px;
+        }
+
+        .logo-img {
+            margin-left: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body style="margin: 0px;">
+    <!-- first div -->
+    <div class="main-box">
+        <!-- second div -->
+        <div class="first-box" id="first-box">
+            &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <h2 style="margin-right: 45%;">Port<span style="color: aqua;">folio</span></h2>
+            <h3> <a id="section" href="#first-box">Home</a></h3>
+            <h3> <a id="section" href="#about">About</a></h3>
+            <h3> <a id="section" href="#skills-box">Skills</a></h3>
+            <h3> <a id="section" href="#projects-section">Projects</a></h3>
+            <h3> <a id="section" href="#contact-box">Contact</a></h3>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+        </div>
+        <!-- third div -->
+        <div class="third-box" id="third-box">
+            <!-- third inner div -->
+            <div class="third-box-one">
+                <p>
+                <h1><span style="text-align: right; font-size: larger">* Hello It's Me *</span></h1>
+                </p>
+                <img src="./assets/images/watsapp img.jpeg" width="300px" height="300px"
+                    style="border-radius: 150px; border-style:groove; border: 5px solid white;">
+                <!-- third inner sec two -->
+                <div class="third-box-two">
+                    <p>
+                    <h1 style="margin-right: 40%; font-size: 50px; margin-top: -3%;">My Name is, <br> Piyush Moroliya
+                    </h1><br>
+                    <h2 style="color: aliceblue; margin-right: 40%; margin-top: -3%;"> And I am an <span
+                            style="color: aqua;">Full stack developer..</span>
+                    </h2>
+                </div>
+                <!-- fourth div -->
+                <div class="about-box">
+                    <!-- about  -->
+                    <div class="about" id="about"></div>
+                    <h1 style="text-align: center; font-size: 55px;"><span style="color: aliceblue;">*About</span>
+                        Myself*</h1>
+                    <p class="p" style="color: aliceblue; font-size: 25px; margin-left: 5%;">
+                        Hello, My Name
+                        is <span style="color: aqua;">Piyush Moroliya</span>.I am versatile Website developer who can
+                        approach HTML and CSS Projects for My Introduction or to Performing my skills in front of World.
+                        I am continuing to develop my skills and contribute to innovative projects.
+                    </p>
+                    <div class="about-img-box">
+                        <!-- about image -->
+                        <img src="./assets/images/pexels-life-of-pix-7974.jpg" width="100%" height="100%">
+                    </div>
+                    <!-- about caption -->
+                    <div class="caption-box">
+                        <p style="font-size: 28px; color: white;">"The best way to predict the future is to create
+                            it..."
+                        </p>
+
+                    </div>
+                    <!-- about completed -->
+                </div>
+                <!-- skills box -->
+                <div class="skills-box" id="skills-box">
+                    <h1
+                        style="text-align: center; font-size: 55px; color: aqua; font-family:Georgia, 'Times New Roman', Times, serif ;">
+                        Skills..</h1>
+                    <div class="box">
+                        <div class="html-box">
+                            <h1 style="text-align: center; ">HTML</h1>
+                            <p>
+                            <h2 style="color: #3FA2F6;">HTML stand's for Hyper Text Markup language.HTML is the markup
+                                language that you
+                                surround
+                                content with, to tell browsers about headings, lists, tables, and more.</h2>
+                            </p>
+
+                        </div>
+                        <div class="css-box">
+                            <h1 style="text-align: center;">CSS</h1>
+                            <p>
+                            <h2 style="color: #3FA2F6;">CSS stand's for Cast Creeding stylesheet.CSS is the stylesheet
+                                language that you style
+                                the page with, to tell browsers to change the color, font, layout, and more.</p>
+                            </h2>
+                        </div>
+                    </div>
+                    <!-- projects section-->
+                    <div>
+                        <h1 style="margin-left: 45%; margin-top: 30%; padding: 5px; font-size: 45px;">My projects..</h1>
+
+                        <div class="projects-section" id="projects-section">
+                            <div class="project-box-one">
+                                <img src="./assets/images/form-img.png" width="100%" height="100%">
+                                <a href="form.html"
+                                    style="margin-left: 30%; font-style: italic; font-size: 30px;"><button> Form
+                                    </button></a>
+                            </div>
+                            <div class="project-box-two">
+                                <img src="./assets/images/layout image.png" width="100%" height="100%">
+                                <a href="tabel.second.html"
+                                    style="margin-left: 35%; font-style: italic; font-size: 30px;; "><button> layout
+                                    </button></a>
+                            </div>
+                            <div class="project-box-three">
+                                <img src="./assets/images/html css logo.png" width="100%" height="100%">
+                                <a href="movies.html"
+                                    style="margin-left: 20%; font-style: italic; font-size: 30px;; "><button> HTML and
+                                        CSS
+                                    </button></a>
+                            </div>
+                            <div class="project-box-four">
+                                <img src="./assets/images/flex box layouts.png" width="100%" height="100%">
+                                <a href="sec-frame.html"
+                                    style="margin-left: 20%; font-style: italic; font-size: 30px;; "><button>Flex
+                                        Layouts
+                                    </button></a>
+                            </div>
+                            <div class="">
+
+                            </div>
+                        </div>
+                        <h1
+                            style="color: white; margin-left: 10%; margin-top: 5%; font-family: Georgia, 'Times New Roman', Times, serif;">
+                            "It takes half your life before you discover life is a do-it-yourself project"...</h1>
+                    </div>
+                    <!-- contact section -->
+                    <div class="contact-section-box" id="contact-box">
+
+                        <div class="contact-box">
+                            <div class="contact-box-one">
+                                <h1 style="margin-left: 25%; font-size: 45px;;">*Contact Us*</h1>
+                                <br>
+                                <h1 style="margin-left: 15%; color: white; margin-top: -1%">Contact no:-755XXXXXXX</h1>
+                                <h2 style="margin-left: 15%; color: white; font-size: 35px;">Email:-
+                                    Pmoroliya4@gmail.com</h2>
+                                <a href="contact.html"
+                                    style="margin-left: 30%; font-style: italic; font-size: 30px;; "><button>Contact Me
+                                        <i class="fa-solid fa-phone"></i>
+                                    </button></a>
+                            </div>
+                            <div class="contact-box-two">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.7035636742567!2d78.57788117541371!3d21.283198578990635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4572f05baf273%3A0x4375ad7cba06c6b2!2sPanchavati%20katol!5e0!3m2!1sen!2sin!4v1721545903511!5m2!1sen!2sin"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-sec">
+                        <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act">
+                            <img class="logo-img"
+                                src="https://static.vecteezy.com/system/resources/previews/016/716/465/original/gmail-icon-free-png.png"
+                                height="90px" width="90px">
+                        </a>
+                        <a href="https://github.com/Piyushmoroliya">
+                            <img class="logo-img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR27kaHyBN4-iwj7H4pMmnE7kaC720Y-PYzKQ&usqp=CAU"
+                                height="90px" width="90px" style="border-radius: 50%;" alt="">
+                        </a>
+                        <a href=""></a>
+                        <img class="logo-img"
+                            src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+                            height="90px" width="90px" style="border-radius: 50%;" alt="">
+                            <a href="https://x.com/PiyushM0045">
+                        <img class="logo-img"
+                            src="https://cdn.freelogovectors.net/wp-content/uploads/2023/07/twitter-x-logo-freelogovectors.net_.png"
+                            height="100px" width="135px" alt="">
+                        </a>
+                    </div>
+                </div>
+
+
+
+</body>
+
+</html>
